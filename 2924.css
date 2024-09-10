@@ -1,0 +1,295 @@
+header{
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+ul{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+   
+}
+ul a{
+    text-decoration: none;
+}
+#toggle,label{
+    display: none;
+}
+
+#about{
+    padding: 10px;
+    margin-top: 5px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #CCD5AE;
+}
+#about > div >img{
+    width: 200px;
+    border-radius: 50%;
+    transition: all;
+        transition-duration: 5s;
+        transition-delay: 2s;
+        transition-timing-function: linear;
+}
+.about-right p{
+    font-size: 25px;
+    font-family: cursive;
+}
+#skills{
+    margin-top: 5px;
+    padding: 10px;
+    display: flex;
+    background-color: #987D9A;
+    justify-content: space-around;
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 20px 50px;
+}
+th{
+    background-color: #77E4C8;
+}
+td{
+    background-color: #A0937D;
+}
+#projects {
+    display: flex;
+    gap: 10px;
+}
+#projects > div{
+    padding: 10px;
+    margin-top: 5px;
+    background-color: lightsalmon;
+    width: 400px;
+    height: 300px;
+}
+#projects div > img{
+    width:100% ;
+    height: 75%;
+}
+#projects div > h2{
+    margin-top: -2px;
+}
+.P_links{
+    display: flex;
+    justify-content: space-between;
+}
+#contact{
+    margin-top: 5px;
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+}
+#contact input{
+    width: 50%;
+    padding: 10px 0px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 14px;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+}
+#contact P{
+    background-color: rgb(66, 66, 220);
+    padding: 10px;
+    width: 50%;
+   margin: 1% auto;
+}
+footer{
+    margin-top: 10px;
+    /* display: flex; */
+    padding: 5% ;
+    font-size: 30px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+footer .social-Links,footer .up-links{
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width:425px){
+    *{
+        margin: 0%;
+    }
+    header{
+        width: 425px;
+        display: flex;
+        padding: 10px 45px;
+        text-align: center;
+    }
+    h1{
+        margin-left: 30px;
+    }
+    ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    #about{
+        width: 425px;
+        padding: 45px;
+        background-color: #81a310;
+    }
+    #skills{
+        width: 425px;
+        padding: 45px;
+        gap: 20px;
+        flex-direction: column;
+        background-color: #987D9A;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table{
+        width: 300px;
+        text-align: center;
+    }
+    #projects {
+        margin-top: 10px;
+        width: 425px;
+        background-color: aqua;
+        flex-wrap: wrap;
+        gap: 10px;
+       padding: 45px;
+    }
+    #contact{
+       width: 425px;
+       padding: 45px;
+    }
+    footer{
+       width: 425px;
+       padding: 45px;
+    background-color: rgba(0, 0, 0, 0.301);
+    }
+    label{
+        display: block;
+    }
+    ul{
+        width: 425px;
+        display: none;
+    }
+    #toggle:checked~ul{
+        display: flex;
+    }
+    #cross{
+        margin-left: 200px;
+        background-color: red;
+        padding: 20px;
+    }
+    #projects:hover{
+        background-color: yellow;
+        transition: all;
+        transition-duration: 5s;
+        transition-delay: 2s;
+        transition-timing-function: ease-in-out;
+        transform:scale(1.5)
+    }
+    #about > div >img:hover{
+        transform: rotate(360deg);
+        background-color: blue;
+        padding: 10px;
+        transition: all;
+        transition-duration: 5s;
+        transition-delay: 2s;
+        transition-timing-function: linear;
+       
+    }
+
+}
+@media screen and (min-width:425px) and (max-width:768px){
+    *{
+        margin: 0%;
+    }
+    header{
+        width: 768px;
+        display: flex;
+        padding: 10px 45px;
+        text-align: center;
+    }
+    h1{
+        margin-left: 30px;
+    }
+    ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    #about{
+        width: 768px;
+        padding: 45px;
+        background-color: #81a310;
+    }
+    #skills{
+        width: 768px;
+        padding: 45px;
+        gap: 20px;
+        flex-wrap: wrap;
+        background-color: #987D9A;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table{
+        width: 300px;
+        text-align: center;
+    }
+    #projects {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 10px;
+        width: 768px;
+        gap: 5px;
+    }
+    #contact{
+       width: 768px;
+       padding: 45px;
+    }
+    footer{
+       width: 768px;
+       padding: 45px;
+    background-color: rgba(0, 0, 0, 0.301);
+    }
+    label{
+        display: block;
+    }
+    ul{
+        width: 425px;
+        display: none;
+    }
+    #toggle:checked~ul{
+        display: flex;
+    }
+    #cross{
+        margin-left: 160px;
+        background-color: red;
+        padding: 20px;
+    }
+    #projects:hover{
+        background-color: yellow;
+        transition: all;
+        transition-duration: 5s;
+        transition-delay: 2s;
+        transition-timing-function: ease-in-out;
+        transform:scale(1.5)
+    }
+    #about > div >img:hover{
+        transform: rotate(360deg);
+        background-color: blue;
+        padding: 10px;
+        transition: all;
+        transition-duration: 5s;
+        transition-delay: 2s;
+        transition-timing-function: linear;
+       
+    }
+
+}
